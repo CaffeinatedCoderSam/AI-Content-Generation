@@ -1,0 +1,33 @@
+{
+  "title": "Investment property in Milan",
+  "location": {
+    "city": "Milan",
+    "neighborhood": "Navigli",
+    "region": "Lombardy",
+    "country": "Italy"
+  },
+  "features": {
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "area_sqm": 75,
+    "balcony": true,
+    "parking": false,
+    "elevator": true,
+    "floor": 3,
+    "year_built": 1960,
+    "renovated": true,
+    "air_conditioning": true
+  },
+  "price": 380000,
+  "currency": "EUR",
+  "listing_type": "sale",
+  "language": "it",
+  "tone": "investor",
+  "region_seo": "it",
+  "highlights": [
+    "High rental demand area",
+    "Near university district",
+    "Potential rental yield 5-6%"
+  ]
+}
+

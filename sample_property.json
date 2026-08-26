@@ -1,0 +1,24 @@
+{
+  "title": "T3 apartment in Lisbon",
+  "location": {
+    "city": "Lisbon",
+    "neighborhood": "Campo de Ourique",
+    "country": "Portugal"
+  },
+  "features": {
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "area_sqm": 120,
+    "balcony": true,
+    "parking": false,
+    "elevator": true,
+    "floor": 2,
+    "year_built": 2005
+  },
+  "price": 650000,
+  "currency": "EUR",
+  "listing_type": "sale",
+  "language": "en",
+  "tone": "friendly"
+}
+

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .language-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        .lang-btn {
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .lang-btn:hover {
+            background: #f5f5f5;
+        }
+        .lang-btn.active {
+            background: #2563eb;
+            color: white;
+            border-color: #2563eb;
+        }
+        h1 {
+            color: #1a1a1a;
+            font-size: 2rem;
+            margin-top: 60px;
+        }
+        section {
+            margin: 24px 0;
+        }
+        section p {
+            color: #555;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .call-to-action {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+            margin-top: 30px;
+        }
+        @media (max-width: 768px) {
+            .language-switcher {
+                position: static;
+                margin-bottom: 20px;
+                justify-content: center;
+            }
+            h1 {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="en" onclick="switchLanguage('en')">🇬🇧 English</button>
+        <button class="lang-btn" data-lang="pt" onclick="switchLanguage('pt')">🇵🇹 Portuguese</button>
+        <button class="lang-btn" data-lang="es" onclick="switchLanguage('es')">🇪🇸 Spanish</button>
+        <button class="lang-btn" data-lang="fr" onclick="switchLanguage('fr')">🇫🇷 French</button>
+        <button class="lang-btn" data-lang="it" onclick="switchLanguage('it')">🇮🇹 Italian</button>
+    </div>
+    
+    <!-- English Content -->
+    <div class="lang-content" data-lang="en" style="display: block;">
+        <title>T3 Apartment for Sale in Campo de Ourique, Lisbon</title>
+        
+        <meta name="description" content="Spacious 3-bedroom apartment for sale in Lisbon with balcony and elevator access, located in the heart of Campo de Ourique. Ideal for families.">
+        
+        <h1>Modern 3-Bedroom Apartment in Campo de Ourique, Lisbon</h1>
+        
+        <section id="description">
+            <p>Nestled in the vibrant neighborhood of Campo de Ourique, this stylish T3 apartment offers 120 sqm of bright and spacious living. Located on the second floor of a well-maintained building with elevator access, the property features three generously sized bedrooms, two modern bathrooms, and a private balcony perfect for enjoying Lisbon's sunny days. Built in 2005, this apartment blends modern design with everyday comfort. With a sale price of €650,000, it presents an excellent opportunity for families or professionals seeking a central Lisbon lifestyle.</p>
+        </section>
+        
+        <ul id="key-features">
+            <li>120 sqm of living space</li>
+            <li>3 bedrooms and 2 bathrooms</li>
+            <li>Private balcony</li>
+            <li>Elevator access</li>
+            <li>Located in Campo de Ourique, Lisbon</li>
+        </ul>
+        
+        <section id="neighborhood">
+            <p>Campo de Ourique is one of Lisbon's most sought-after neighborhoods, known for its traditional charm, trendy cafés, and excellent schools. With green parks, local markets, and easy access to public transportation, it offers a perfect blend of comfort and convenience in the heart of the city.</p>
+        </section>
+        
+        <p class="call-to-action">Don't miss this opportunity—schedule your visit today and make this Lisbon apartment your new home.</p>
+    </div>
+    
+    <!-- Portuguese Content -->
+    <div class="lang-content" data-lang="pt" style="display: none;">
+        <title>Apartamento T3 à Venda em Campo de Ourique, Lisboa</title>
+        
+        <meta name="description" content="Espaçoso apartamento T3 à venda em Lisboa com varanda e elevador, situado no coração de Campo de Ourique. Ideal para famílias.">
+        
+        <h1>Apartamento T3 Moderno com Varanda em Campo de Ourique, Lisboa</h1>
+        
+        <section id="description">
+            <p>Situado no charmoso bairro de Campo de Ourique, este elegante apartamento T3 oferece 120 m² de espaço luminoso e amplo. Localizado no segundo andar de um edifício bem conservado com acesso a elevador, o imóvel dispõe de três quartos espaçosos, duas casas de banho modernas e uma varanda privativa perfeita para desfrutar dos dias soalheiros de Lisboa. Construído em 2005, combina design moderno com conforto quotidiano. Com um preço de venda de €650.000, representa uma excelente oportunidade para famílias ou profissionais que procuram um estilo de vida central em Lisboa.</p>
+        </section>
+        
+        <ul id="key-features">
+            <li>120 m² de área útil</li>
+            <li>3 quartos e 2 casas de banho</li>
+            <li>Varanda privativa</li>
+            <li>Acesso a elevador</li>
+            <li>Localizado em Campo de Ourique, Lisboa</li>
+        </ul>
+        
+        <section id="neighborhood">
+            <p>Campo de Ourique é um dos bairros mais procurados de Lisboa, conhecido pelo seu charme tradicional, cafés modernos e excelentes escolas. Com parques verdes, mercados locais e fácil acesso a transportes públicos, oferece uma combinação perfeita de conforto e conveniência no coração da cidade.</p>
+        </section>
+        
+        <p class="call-to-action">Não perca esta oportunidade—agende a sua visita hoje e faça deste apartamento em Lisboa o seu novo lar.</p>
+    </div>
+    
+    <!-- Spanish Content -->
+    <div class="lang-content" data-lang="es" style="display: none;">
+        <title>Apartamento de 3 Habitaciones en Venta en Campo de Ourique, Lisboa</title>
+        
+        <meta name="description" content="Amplio apartamento de 3 habitaciones en venta en Lisboa con balcón y ascensor, ubicado en el corazón de Campo de Ourique. Ideal para familias.">
+        
+        <h1>Moderno Apartamento de 3 Habitaciones en Campo de Ourique, Lisboa</h1>
+        
+        <section id="description">
+            <p>Ubicado en el encantador barrio de Campo de Ourique, este elegante apartamento de 3 habitaciones ofrece 120 m² de espacio luminoso y amplio. Situado en el segundo piso de un edificio bien mantenido con acceso a ascensor, la propiedad cuenta con tres amplios dormitorios, dos baños modernos y un balcón privado perfecto para disfrutar de los días soleados de Lisboa. Construido en 2005, combina diseño moderno con comodidad cotidiana. Con un precio de venta de €650.000, representa una excelente oportunidad para familias o profesionales que buscan un estilo de vida central en Lisboa.</p>
+        </section>
+        
+        <ul id="key-features">
+            <li>120 m² de espacio habitable</li>
+            <li>3 dormitorios y 2 baños</li>
+            <li>Balcón privado</li>
+            <li>Acceso a ascensor</li>
+            <li>Ubicado en Campo de Ourique, Lisboa</li>
+        </ul>
+        
+        <section id="neighborhood">
+            <p>Campo de Ourique es uno de los barrios más buscados de Lisboa, conocido por su encanto tradicional, cafés de moda y excelentes escuelas. Con parques verdes, mercados locales y fácil acceso al transporte público, ofrece una combinación perfecta de comodidad y conveniencia en el corazón de la ciudad.</p>
+        </section>
+        
+        <p class="call-to-action">No pierda esta oportunidad—programe su visita hoy y haga de este apartamento en Lisboa su nuevo hogar.</p>
+    </div>
+    
+    <!-- French Content -->
+    <div class="lang-content" data-lang="fr" style="display: none;">
+        <title>Appartement 4 Pièces à Vendre à Campo de Ourique, Lisbonne</title>
+        
+        <meta name="description" content="Spacieux appartement 4 pièces à vendre à Lisbonne avec balcon et ascenseur, situé au cœur de Campo de Ourique. Idéal pour les familles.">
+        
+        <h1>Appartement Moderne de 3 Chambres à Campo de Ourique, Lisbonne</h1>
+        
+        <section id="description">
+            <p>Niché dans le charmant quartier de Campo de Ourique, cet élégant appartement de 3 chambres offre 120 m² d'espace lumineux et spacieux. Situé au deuxième étage d'un immeuble bien entretenu avec ascenseur, le bien dispose de trois chambres généreuses, deux salles de bains modernes et un balcon privé parfait pour profiter des journées ensoleillées de Lisbonne. Construit en 2005, il allie design moderne et confort quotidien. Au prix de 650 000 €, il représente une excellente opportunité pour les familles ou les professionnels recherchant un style de vie central à Lisbonne.</p>
+        </section>
+        
+        <ul id="key-features">
+            <li>120 m² d'espace de vie</li>
+            <li>3 chambres et 2 salles de bains</li>
+            <li>Balcon privé</li>
+            <li>Ascenseur</li>
+            <li>Situé à Campo de Ourique, Lisbonne</li>
+        </ul>
+        
+        <section id="neighborhood">
+            <p>Campo de Ourique est l'un des quartiers les plus recherchés de Lisbonne, connu pour son charme traditionnel, ses cafés branchés et ses excellentes écoles. Avec ses parcs verdoyants, ses marchés locaux et son accès facile aux transports en commun, il offre un parfait équilibre entre confort et commodité au cœur de la ville.</p>
+        </section>
+        
+        <p class="call-to-action">Ne manquez pas cette opportunité—planifiez votre visite aujourd'hui et faites de cet appartement à Lisbonne votre nouveau foyer.</p>
+    </div>
+    
+    <!-- Italian Content -->
+    <div class="lang-content" data-lang="it" style="display: none;">
+        <title>Quadrilocale in Vendita a Campo de Ourique, Lisbona</title>
+        
+        <meta name="description" content="Spazioso quadrilocale in vendita a Lisbona con balcone e ascensore, situato nel cuore di Campo de Ourique. Ideale per famiglie.">
+        
+        <h1>Moderno Appartamento con 3 Camere a Campo de Ourique, Lisbona</h1>
+        
+        <section id="description">
+            <p>Situato nel caratteristico quartiere di Campo de Ourique, questo elegante quadrilocale offre 120 mq di spazio luminoso e ampio. Ubicato al secondo piano di un edificio ben mantenuto con ascensore, l'immobile dispone di tre ampie camere da letto, due bagni moderni e un balcone privato perfetto per godersi le giornate soleggiate di Lisbona. Costruito nel 2005, combina design moderno con comfort quotidiano. Al prezzo di €650.000, rappresenta un'eccellente opportunità per famiglie o professionisti alla ricerca di uno stile di vita centrale a Lisbona.</p>
+        </section>
+        
+        <ul id="key-features">
+            <li>120 mq di spazio abitativo</li>
+            <li>3 camere e 2 bagni</li>
+            <li>Balcone privato</li>
+            <li>Ascensore</li>
+            <li>Situato a Campo de Ourique, Lisbona</li>
+        </ul>
+        
+        <section id="neighborhood">
+            <p>Campo de Ourique è uno dei quartieri più ricercati di Lisbona, noto per il suo fascino tradizionale, i caffè alla moda e le ottime scuole. Con parchi verdi, mercati locali e facile accesso ai trasporti pubblici, offre un perfetto equilibrio tra comfort e convenienza nel cuore della città.</p>
+        </section>
+        
+        <p class="call-to-action">Non perdere questa opportunità—prenota la tua visita oggi e fai di questo appartamento a Lisbona la tua nuova casa.</p>
+    </div>
+    
+    <script>
+        function switchLanguage(lang) {
+            // Hide all content sections
+            document.querySelectorAll('.lang-content').forEach(el => {
+                el.style.display = 'none';
+            });
+            
+            // Show selected language content
+            document.querySelector('.lang-content[data-lang="' + lang + '"]').style.display = 'block';
+            
+            // Update button states
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector('.lang-btn[data-lang="' + lang + '"]').classList.add('active');
+            
+            // Update html lang attribute
+            document.documentElement.lang = lang;
+        }
+    </script>
+</body>
+</html>
+

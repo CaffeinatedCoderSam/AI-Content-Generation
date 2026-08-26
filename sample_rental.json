@@ -1,0 +1,27 @@
+{
+  "title": "Studio apartment in Paris",
+  "location": {
+    "city": "Paris",
+    "neighborhood": "Le Marais",
+    "country": "France"
+  },
+  "features": {
+    "bedrooms": 0,
+    "bathrooms": 1,
+    "area_sqm": 35,
+    "balcony": false,
+    "parking": false,
+    "elevator": true,
+    "floor": 4,
+    "year_built": 1890,
+    "renovated": true,
+    "furnished": true
+  },
+  "price": 1800,
+  "currency": "EUR",
+  "listing_type": "rent",
+  "language": "fr",
+  "tone": "friendly",
+  "description_extra": "Charming studio in a historic building, fully renovated in 2023 with modern amenities while preserving original architectural details."
+}
+

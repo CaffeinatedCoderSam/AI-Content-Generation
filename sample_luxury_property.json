@@ -1,0 +1,35 @@
+{
+  "title": "Penthouse de luxo com vista mar",
+  "location": {
+    "city": "Barcelona",
+    "neighborhood": "Diagonal Mar",
+    "region": "Cataluña",
+    "country": "Spain"
+  },
+  "features": {
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "area_sqm": 350,
+    "balcony": true,
+    "parking": true,
+    "elevator": true,
+    "floor": 15,
+    "year_built": 2020,
+    "terrace": true,
+    "pool": true,
+    "air_conditioning": true,
+    "furnished": true
+  },
+  "price": 2500000,
+  "currency": "EUR",
+  "listing_type": "sale",
+  "language": "es",
+  "tone": "luxury",
+  "region_seo": "es",
+  "highlights": [
+    "Panoramic sea views",
+    "Private rooftop terrace",
+    "Smart home automation"
+  ]
+}
+
